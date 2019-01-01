@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source        = { :git => 'https://github.com/jiwonsis/ReWebKit.git',
                       :tag => s.version.to_s }
   s.license       = { :type => "MIT", :file => "LICENSE" }
-  s.source_files  = 'Sources/ReWebKit/**/*'
+  s.source_files  = 'ReWebKit/Sources/**/*'
   s.frameworks    = 'UIKit', 'Foundation'
   s.requires_arc  = true
 

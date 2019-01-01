@@ -5,9 +5,7 @@ import RxCocoa
 extension Reactive where Base: ReWebView {
     
     public typealias JSAlertEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: () -> ())
-    
     public typealias JSConfirmEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: (Bool) -> ())
-    
     public typealias JSDidClose = (ReWebView)
     
     public var uiDelegate: DelegateProxy<ReWebView, WKUIDelegate> {

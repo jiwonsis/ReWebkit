@@ -1,6 +1,4 @@
 .DS_Store
-/.build
-/Packages
-/*.xcodeproj
-
 .idea
+Carthage/Checkouts
+Carthage/Build

@@ -55,7 +55,6 @@ class WKUIDelegateEventSpec: QuickSpec {
                     waitUntil(timeout: 3.0, action: { done in
                         actor.rx.didClose
                             .subscribe(onNext: { webView in
-                                
                                 expect(webView).toNot(beNil())
                                 done()
                             })

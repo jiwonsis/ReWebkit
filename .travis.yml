@@ -1,24 +1,25 @@
 osx_image: xcode10
 language: objective-c
 sudo: required
+
+cache:
+  directories:
+  - Carthage
+
 env:
   global:
     - PROJECT="ReWebKit.xcodeproj"
-    - SCHEME="ReWebKit-Package"
+    - SCHEME="ReWebKit"
     - IOS_SDK="iphonesimulator12.0"
     - DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=12.0"
 
-before_install: gem install bundler
-
-install:
-  - eval "$(curl -sL https://gist.githubusercontent.com/kylef/5c0475ff02b7c7671d2a/raw/9f442512a46d7a2af7b850d65a7e9bd31edfb09b/swiftenv-install.sh)"
-  - swift --version
+before_install:
+  - brew install carthage || true
+  - brew outdated carthage || brew upgrade carthage
+  - gem install xcpretty-travis-formatter --no-rdoc --no-ri --no-document --quiet
 
 before_script:
-  - gem install xcodeproj
-  - gem install xcpretty
-  - set -o pipefail
-  - TEST=1 swift package generate-xcodeproj
+  - carthage bootstrap --platform iOS --no-use-binaries --cache-builds
 
 script:
   - xcodebuild clean build test
@@ -28,7 +29,7 @@ script:
     -destination "$DESTINATION"
     -configuration Debug
     -enableCodeCoverage YES
-    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c
+    CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -f `xcpretty-travis-formatter`
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -X xcodeplist -J 'ReWebkit'
