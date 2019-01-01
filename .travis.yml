@@ -3,8 +3,8 @@ language: objective-c
 sudo: required
 env:
   global:
-    - PROJECT="ReWebkit.xcodeproj"
-    - SCHEME="ReWebkit-Package"
+    - PROJECT="ReWebKit.xcodeproj"
+    - SCHEME="ReWebKit-Package"
     - IOS_SDK="iphonesimulator12.0"
     - DESTINATION="platform=iOS Simulator,name=iPhone 8,OS=12.0"
 
