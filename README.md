@@ -1,6 +1,6 @@
 # ReWebKit
 
-[![CI Status](https://img.shields.io/travis/jiwonsis/ReWebKit.svg?style=flat)](https://travis-ci.com/jiwonsis/ReWebkit)
+[![CI Status](https://travis-ci.com/jiwonsis/ReWebkit.svg?branch=master)](https://travis-ci.com/jiwonsis/ReWebkit)
 [![Version](https://img.shields.io/cocoapods/v/ReWebKit.svg?style=flat)](https://cocoapods.org/pods/ReWebKit)
 [![License](https://img.shields.io/cocoapods/l/ReWebKit.svg?style=flat)](https://cocoapods.org/pods/ReWebKit)
 [![Platform](https://img.shields.io/cocoapods/p/ReWebKit.svg?style=flat)](https://cocoapods.org/pods/ReWebKit)
