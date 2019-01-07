@@ -17,4 +17,8 @@ public class ReWebView: WKWebView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func load(_ url: String) {
+        let url = URL(string: url)!
+        self.load(URLRequest(url: url))
+    }
 }

@@ -4,7 +4,7 @@ import RxCocoa
 
 extension Reactive where Base: ReWebView {
     
-    public typealias JSAlertEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: () -> ())
+    public typealias JSAlertEvent = (webView: ReWebView, message: String, frame: WKFrameInfo, handler: () -> ())
     public typealias JSConfirmEvent = (webView: WKWebView, message: String, frame: WKFrameInfo, handler: (Bool) -> ())
     public typealias JSDidClose = (ReWebView)
     
@@ -18,7 +18,7 @@ extension Reactive where Base: ReWebView {
             .methodInvoked(.jsAlert)
             .map{ args in
                 
-                let view = args[0] as! WKWebView
+                let view = args[0] as! ReWebView
                 let message = args[1] as! String
                 let frame = args[2] as! WKFrameInfo
                 var closureObject: AnyObject? = nil

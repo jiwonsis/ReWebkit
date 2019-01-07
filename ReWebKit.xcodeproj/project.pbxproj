@@ -16,13 +16,10 @@
 		2910A90A21DF481D0091F349 /* WKNavigationDelegateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90521DF481D0091F349 /* WKNavigationDelegateEvent.swift */; };
 		2910A90B21DF481D0091F349 /* WKUIDelegateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90621DF481D0091F349 /* WKUIDelegateEvent.swift */; };
 		2910A91921DF48680091F349 /* WKUIDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90E21DF48680091F349 /* WKUIDelegateMock.swift */; };
-		2910A91A21DF48680091F349 /* ReWebViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90F21DF48680091F349 /* ReWebViewMock.swift */; };
 		2910A91B21DF48680091F349 /* WKNavigationDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91021DF48680091F349 /* WKNavigationDelegateMock.swift */; };
 		2910A91C21DF48680091F349 /* ReWebViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91221DF48680091F349 /* ReWebViewSpec.swift */; };
 		2910A91D21DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91421DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift */; };
 		2910A91E21DF48680091F349 /* RxWKUIDelgateProxySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91521DF48680091F349 /* RxWKUIDelgateProxySpec.swift */; };
-		2910A91F21DF48680091F349 /* WKNavigationDelegateEventSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91721DF48680091F349 /* WKNavigationDelegateEventSpec.swift */; };
-		2910A92021DF48680091F349 /* WKUIDelegateEventSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91821DF48680091F349 /* WKUIDelegateEventSpec.swift */; };
 		2910A92521DF48970091F349 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92221DF48960091F349 /* RxSwift.framework */; };
 		2910A92621DF48970091F349 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92321DF48960091F349 /* RxCocoa.framework */; };
 		2910A92721DF48970091F349 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92421DF48970091F349 /* RxAtomic.framework */; };
@@ -35,6 +32,12 @@
 		2910A93521DF4BBA0091F349 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A93021DF4BBA0091F349 /* Quick.framework */; };
 		2910A93A21DF4F180091F349 /* StubServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A93921DF4F180091F349 /* StubServer.swift */; };
 		2910A93C21DF55F40091F349 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A93B21DF55F40091F349 /* Swifter.framework */; };
+		2960A89B21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */; };
+		2979214621E3995C000EBBA4 /* WKUIDelegateEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */; };
+		2979214821E39C90000EBBA4 /* ReConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214721E39C90000EBBA4 /* ReConfigurationBuilder.swift */; };
+		2979214D21E39D71000EBBA4 /* ReListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214C21E39D71000EBBA4 /* ReListener.swift */; };
+		2979214F21E39D7B000EBBA4 /* ReConfigulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214E21E39D7B000EBBA4 /* ReConfigulation.swift */; };
+		2979215121E39E97000EBBA4 /* ReWebViewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979215021E39E97000EBBA4 /* ReWebViewEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,13 +63,10 @@
 		2910A90521DF481D0091F349 /* WKNavigationDelegateEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateEvent.swift; sourceTree = "<group>"; };
 		2910A90621DF481D0091F349 /* WKUIDelegateEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKUIDelegateEvent.swift; sourceTree = "<group>"; };
 		2910A90E21DF48680091F349 /* WKUIDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKUIDelegateMock.swift; sourceTree = "<group>"; };
-		2910A90F21DF48680091F349 /* ReWebViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReWebViewMock.swift; sourceTree = "<group>"; };
 		2910A91021DF48680091F349 /* WKNavigationDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateMock.swift; sourceTree = "<group>"; };
 		2910A91221DF48680091F349 /* ReWebViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReWebViewSpec.swift; sourceTree = "<group>"; };
 		2910A91421DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWkNavigationDelegateProxyTests.swift; sourceTree = "<group>"; };
 		2910A91521DF48680091F349 /* RxWKUIDelgateProxySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWKUIDelgateProxySpec.swift; sourceTree = "<group>"; };
-		2910A91721DF48680091F349 /* WKNavigationDelegateEventSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateEventSpec.swift; sourceTree = "<group>"; };
-		2910A91821DF48680091F349 /* WKUIDelegateEventSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKUIDelegateEventSpec.swift; sourceTree = "<group>"; };
 		2910A92221DF48960091F349 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		2910A92321DF48960091F349 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2910A92421DF48970091F349 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
@@ -76,6 +76,12 @@
 		2910A93021DF4BBA0091F349 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		2910A93921DF4F180091F349 /* StubServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubServer.swift; sourceTree = "<group>"; };
 		2910A93B21DF55F40091F349 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/iOS/Swifter.framework; sourceTree = "<group>"; };
+		2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateTests.swift; sourceTree = "<group>"; };
+		2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKUIDelegateEventTests.swift; sourceTree = "<group>"; };
+		2979214721E39C90000EBBA4 /* ReConfigurationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConfigurationBuilder.swift; sourceTree = "<group>"; };
+		2979214C21E39D71000EBBA4 /* ReListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReListener.swift; sourceTree = "<group>"; };
+		2979214E21E39D7B000EBBA4 /* ReConfigulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConfigulation.swift; sourceTree = "<group>"; };
+		2979215021E39E97000EBBA4 /* ReWebViewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReWebViewEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +166,9 @@
 		2910A8FF21DF481D0091F349 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2979214B21E39D5A000EBBA4 /* Rrotocols */,
 				2910A90021DF481D0091F349 /* ReWebView.swift */,
+				2979214721E39C90000EBBA4 /* ReConfigurationBuilder.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 			children = (
 				2910A90521DF481D0091F349 /* WKNavigationDelegateEvent.swift */,
 				2910A90621DF481D0091F349 /* WKUIDelegateEvent.swift */,
+				2979215021E39E97000EBBA4 /* ReWebViewEvent.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -199,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				2910A90E21DF48680091F349 /* WKUIDelegateMock.swift */,
-				2910A90F21DF48680091F349 /* ReWebViewMock.swift */,
 				2910A91021DF48680091F349 /* WKNavigationDelegateMock.swift */,
 			);
 			path = Mocks;
@@ -225,8 +233,8 @@
 		2910A91621DF48680091F349 /* Events */ = {
 			isa = PBXGroup;
 			children = (
-				2910A91721DF48680091F349 /* WKNavigationDelegateEventSpec.swift */,
-				2910A91821DF48680091F349 /* WKUIDelegateEventSpec.swift */,
+				2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */,
+				2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -252,6 +260,15 @@
 				2910A93921DF4F180091F349 /* StubServer.swift */,
 			);
 			path = Stub;
+			sourceTree = "<group>";
+		};
+		2979214B21E39D5A000EBBA4 /* Rrotocols */ = {
+			isa = PBXGroup;
+			children = (
+				2979214C21E39D71000EBBA4 /* ReListener.swift */,
+				2979214E21E39D7B000EBBA4 /* ReConfigulation.swift */,
+			);
+			path = Rrotocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,11 +434,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2979214D21E39D71000EBBA4 /* ReListener.swift in Sources */,
 				2910A90721DF481D0091F349 /* ReWebView.swift in Sources */,
+				2979214F21E39D7B000EBBA4 /* ReConfigulation.swift in Sources */,
 				2910A90A21DF481D0091F349 /* WKNavigationDelegateEvent.swift in Sources */,
 				2910A90921DF481D0091F349 /* RxWKUIDelgateProxy.swift in Sources */,
+				2979215121E39E97000EBBA4 /* ReWebViewEvent.swift in Sources */,
 				2910A90821DF481D0091F349 /* RxWkNavigationDelegateProxy.swift in Sources */,
 				2910A90B21DF481D0091F349 /* WKUIDelegateEvent.swift in Sources */,
+				2979214821E39C90000EBBA4 /* ReConfigurationBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,13 +450,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2910A91F21DF48680091F349 /* WKNavigationDelegateEventSpec.swift in Sources */,
 				2910A91B21DF48680091F349 /* WKNavigationDelegateMock.swift in Sources */,
 				2910A93A21DF4F180091F349 /* StubServer.swift in Sources */,
+				2979214621E3995C000EBBA4 /* WKUIDelegateEventTests.swift in Sources */,
 				2910A91921DF48680091F349 /* WKUIDelegateMock.swift in Sources */,
 				290FCD4921DF44C900B4E260 /* ReWebKitTests.swift in Sources */,
-				2910A92021DF48680091F349 /* WKUIDelegateEventSpec.swift in Sources */,
-				2910A91A21DF48680091F349 /* ReWebViewMock.swift in Sources */,
+				2960A89B21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift in Sources */,
 				2910A91C21DF48680091F349 /* ReWebViewSpec.swift in Sources */,
 				2910A91E21DF48680091F349 /* RxWKUIDelgateProxySpec.swift in Sources */,
 				2910A91D21DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift in Sources */,

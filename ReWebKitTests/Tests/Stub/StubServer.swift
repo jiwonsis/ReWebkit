@@ -2,41 +2,48 @@ import Foundation
 import Swifter
 
 class StubServer {
-    static let shared = StubServer()
-    private init() {}
     
     let server = HttpServer()
     
-    
-    // find the stub key in env property
-    func getStubInfo() -> (needStub: Bool, url: String) {
-        let env = ProcessInfo.processInfo.environment
-        if let value = env["STUB"] {
-            return (needStub: true, url: value)
-        }
+    func setUp() {
+        stubSetup()
+        try! server.start(7000)
         
-        return (needStub: false, url: "")
     }
     
-    func startServer() {
-        guard let resourcePath = Bundle.main.resourcePath else {
-            fatalError("ResourcePath could not get !!")
-        }
-        
-        server["/:path"] = shareFile(resourcePath)
-        do {
-            try server.start(9080)
-        } catch {
-            fatalError("Swifter server does not started")
-        }
-    }
-    
-    func stopServer() {
+    func tearDown() {
         server.stop()
+    }
+    
+    func getUrl() -> String {
+        return "http://localhost:7000"
+    }
+    
+    func stubSetup() {
+        
+        let successServerInfo = StubServerInfo(url: "/default", htmlString: defaulHTMLData())
+        let successResponse: ((HttpRequest) -> HttpResponse) = { _ in
+            return HttpResponse.ok(.html(successServerInfo.htmlString))
+        }
+        server.GET[successServerInfo.url] = successResponse
+        
+        let redirectionServerInfo = StubServerInfo(url: "/redirect", htmlString: "")
+        server[redirectionServerInfo.url] = { req in
+            return .movedPermanently("/default")
+        }
+        
+        let failServerInfo = StubServerInfo(url: "/fail", htmlString: "")
+        server[failServerInfo.url] = { req in
+            return .forbidden
+        }
+    }
+    
+    func defaulHTMLData() -> String {
+        return "<h1 class=\"title\">title</h1><p><a href=hoge://>link</a></p>"
     }
 }
 
 struct StubServerInfo {
     let url: String
-    let htmlData: Data
+    let htmlString: String
 }
