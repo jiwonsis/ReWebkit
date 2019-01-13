@@ -39,7 +39,10 @@ class StubServer {
     }
     
     func defaulHTMLData() -> String {
-        return "<h1 class=\"title\">title</h1><p><a href=hoge://>link</a></p>"
+        let header = "<html><header><title>test ReWebview</title></header>"
+        let body = "<body><h1 class=\"title\">title</h1><p><a href=hoge://>link</a></p></body>"
+        let end = "</html>"
+        return header + body + end
     }
 }
 

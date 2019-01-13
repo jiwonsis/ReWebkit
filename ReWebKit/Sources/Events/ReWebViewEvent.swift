@@ -11,8 +11,8 @@ extension Reactive where Base: ReWebView {
             .map{ $0 ?? false }
     }
     
-    public var estimateProgress: Observable<Double> {
-        return self.observeWeakly(Double.self, "estimateProgress")
+    public var estimatedProgress: Observable<Double> {
+        return self.observeWeakly(Double.self, "estimatedProgress")
             .map{ $0 ?? 0.0 }
     }
     
@@ -22,11 +22,11 @@ extension Reactive where Base: ReWebView {
     
     public var canGoBack: Observable<Bool> {
         return self.observeWeakly(Bool.self, "canGoBack")
-            .map{ $0 ?? false }
+            .map{ $0! }
     }
     
     public var canGoFoward: Observable<Bool> {
-        return self.observeWeakly(Bool.self, "canGoFoward")
-            .map{ $0 ?? false }
+        return self.observeWeakly(Bool.self, "canGoForward")
+            .map{ $0! }
     }
 }

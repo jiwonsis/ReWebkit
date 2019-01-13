@@ -14,7 +14,7 @@ public class ReWebView: WKWebView {
     
     // fatalErorr testing does not support Nimble framework. at swift cli
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     func load(_ url: String) {

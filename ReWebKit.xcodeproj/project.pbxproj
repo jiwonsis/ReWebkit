@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		290FCD4421DF44C900B4E260 /* ReWebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290FCD3A21DF44C900B4E260 /* ReWebKit.framework */; };
-		290FCD4921DF44C900B4E260 /* ReWebKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290FCD4821DF44C900B4E260 /* ReWebKitTests.swift */; };
 		290FCD4B21DF44C900B4E260 /* ReWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 290FCD3D21DF44C900B4E260 /* ReWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2910A90721DF481D0091F349 /* ReWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90021DF481D0091F349 /* ReWebView.swift */; };
 		2910A90821DF481D0091F349 /* RxWkNavigationDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90221DF481D0091F349 /* RxWkNavigationDelegateProxy.swift */; };
@@ -18,8 +17,6 @@
 		2910A91921DF48680091F349 /* WKUIDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A90E21DF48680091F349 /* WKUIDelegateMock.swift */; };
 		2910A91B21DF48680091F349 /* WKNavigationDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91021DF48680091F349 /* WKNavigationDelegateMock.swift */; };
 		2910A91C21DF48680091F349 /* ReWebViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91221DF48680091F349 /* ReWebViewSpec.swift */; };
-		2910A91D21DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91421DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift */; };
-		2910A91E21DF48680091F349 /* RxWKUIDelgateProxySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A91521DF48680091F349 /* RxWKUIDelgateProxySpec.swift */; };
 		2910A92521DF48970091F349 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92221DF48960091F349 /* RxSwift.framework */; };
 		2910A92621DF48970091F349 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92321DF48960091F349 /* RxCocoa.framework */; };
 		2910A92721DF48970091F349 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A92421DF48970091F349 /* RxAtomic.framework */; };
@@ -32,6 +29,10 @@
 		2910A93521DF4BBA0091F349 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A93021DF4BBA0091F349 /* Quick.framework */; };
 		2910A93A21DF4F180091F349 /* StubServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2910A93921DF4F180091F349 /* StubServer.swift */; };
 		2910A93C21DF55F40091F349 /* Swifter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2910A93B21DF55F40091F349 /* Swifter.framework */; };
+		292A1B4421EA262800F881C3 /* ReWebkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A1B4321EA262800F881C3 /* ReWebkitTests.swift */; };
+		292A1B4621EA264500F881C3 /* RxWKUIDelgateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A1B4521EA264500F881C3 /* RxWKUIDelgateProxyTests.swift */; };
+		292A1B4821EA2A8B00F881C3 /* RxWkNavigationDelegateProxyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A1B4721EA2A8B00F881C3 /* RxWkNavigationDelegateProxyTests.swift */; };
+		292A1B4A21EA2D1100F881C3 /* ReWebViewEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292A1B4921EA2D1100F881C3 /* ReWebViewEventTests.swift */; };
 		2960A89B21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */; };
 		2979214621E3995C000EBBA4 /* WKUIDelegateEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */; };
 		2979214821E39C90000EBBA4 /* ReConfigurationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2979214721E39C90000EBBA4 /* ReConfigurationBuilder.swift */; };
@@ -55,7 +56,6 @@
 		290FCD3D21DF44C900B4E260 /* ReWebKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReWebKit.h; sourceTree = "<group>"; };
 		290FCD3E21DF44C900B4E260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290FCD4321DF44C900B4E260 /* ReWebKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReWebKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		290FCD4821DF44C900B4E260 /* ReWebKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReWebKitTests.swift; sourceTree = "<group>"; };
 		290FCD4A21DF44C900B4E260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2910A90021DF481D0091F349 /* ReWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReWebView.swift; sourceTree = "<group>"; };
 		2910A90221DF481D0091F349 /* RxWkNavigationDelegateProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWkNavigationDelegateProxy.swift; sourceTree = "<group>"; };
@@ -65,8 +65,6 @@
 		2910A90E21DF48680091F349 /* WKUIDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKUIDelegateMock.swift; sourceTree = "<group>"; };
 		2910A91021DF48680091F349 /* WKNavigationDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateMock.swift; sourceTree = "<group>"; };
 		2910A91221DF48680091F349 /* ReWebViewSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReWebViewSpec.swift; sourceTree = "<group>"; };
-		2910A91421DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWkNavigationDelegateProxyTests.swift; sourceTree = "<group>"; };
-		2910A91521DF48680091F349 /* RxWKUIDelgateProxySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWKUIDelgateProxySpec.swift; sourceTree = "<group>"; };
 		2910A92221DF48960091F349 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		2910A92321DF48960091F349 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		2910A92421DF48970091F349 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
@@ -76,6 +74,10 @@
 		2910A93021DF4BBA0091F349 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		2910A93921DF4F180091F349 /* StubServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubServer.swift; sourceTree = "<group>"; };
 		2910A93B21DF55F40091F349 /* Swifter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swifter.framework; path = Carthage/Build/iOS/Swifter.framework; sourceTree = "<group>"; };
+		292A1B4321EA262800F881C3 /* ReWebkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReWebkitTests.swift; sourceTree = "<group>"; };
+		292A1B4521EA264500F881C3 /* RxWKUIDelgateProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWKUIDelgateProxyTests.swift; sourceTree = "<group>"; };
+		292A1B4721EA2A8B00F881C3 /* RxWkNavigationDelegateProxyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxWkNavigationDelegateProxyTests.swift; sourceTree = "<group>"; };
+		292A1B4921EA2D1100F881C3 /* ReWebViewEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReWebViewEventTests.swift; sourceTree = "<group>"; };
 		2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKNavigationDelegateTests.swift; sourceTree = "<group>"; };
 		2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKUIDelegateEventTests.swift; sourceTree = "<group>"; };
 		2979214721E39C90000EBBA4 /* ReConfigurationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReConfigurationBuilder.swift; sourceTree = "<group>"; };
@@ -147,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				2910A90C21DF48680091F349 /* Tests */,
-				290FCD4821DF44C900B4E260 /* ReWebKitTests.swift */,
 				290FCD4A21DF44C900B4E260 /* Info.plist */,
 			);
 			path = ReWebKitTests;
@@ -195,6 +196,7 @@
 		2910A90C21DF48680091F349 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				292A1B4221EA261000F881C3 /* UIConponents */,
 				2910A93821DF4EE10091F349 /* Stub */,
 				2910A90D21DF48680091F349 /* Mocks */,
 				2910A91121DF48680091F349 /* UIComponents */,
@@ -224,8 +226,8 @@
 		2910A91321DF48680091F349 /* Proxies */ = {
 			isa = PBXGroup;
 			children = (
-				2910A91421DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift */,
-				2910A91521DF48680091F349 /* RxWKUIDelgateProxySpec.swift */,
+				292A1B4721EA2A8B00F881C3 /* RxWkNavigationDelegateProxyTests.swift */,
+				292A1B4521EA264500F881C3 /* RxWKUIDelgateProxyTests.swift */,
 			);
 			path = Proxies;
 			sourceTree = "<group>";
@@ -235,6 +237,7 @@
 			children = (
 				2960A89A21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift */,
 				2979214521E3995C000EBBA4 /* WKUIDelegateEventTests.swift */,
+				292A1B4921EA2D1100F881C3 /* ReWebViewEventTests.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -260,6 +263,14 @@
 				2910A93921DF4F180091F349 /* StubServer.swift */,
 			);
 			path = Stub;
+			sourceTree = "<group>";
+		};
+		292A1B4221EA261000F881C3 /* UIConponents */ = {
+			isa = PBXGroup;
+			children = (
+				292A1B4321EA262800F881C3 /* ReWebkitTests.swift */,
+			);
+			path = UIConponents;
 			sourceTree = "<group>";
 		};
 		2979214B21E39D5A000EBBA4 /* Rrotocols */ = {
@@ -451,14 +462,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2910A91B21DF48680091F349 /* WKNavigationDelegateMock.swift in Sources */,
+				292A1B4421EA262800F881C3 /* ReWebkitTests.swift in Sources */,
 				2910A93A21DF4F180091F349 /* StubServer.swift in Sources */,
+				292A1B4A21EA2D1100F881C3 /* ReWebViewEventTests.swift in Sources */,
+				292A1B4621EA264500F881C3 /* RxWKUIDelgateProxyTests.swift in Sources */,
 				2979214621E3995C000EBBA4 /* WKUIDelegateEventTests.swift in Sources */,
 				2910A91921DF48680091F349 /* WKUIDelegateMock.swift in Sources */,
-				290FCD4921DF44C900B4E260 /* ReWebKitTests.swift in Sources */,
 				2960A89B21E0DC8F00E81EF8 /* WKNavigationDelegateTests.swift in Sources */,
+				292A1B4821EA2A8B00F881C3 /* RxWkNavigationDelegateProxyTests.swift in Sources */,
 				2910A91C21DF48680091F349 /* ReWebViewSpec.swift in Sources */,
-				2910A91E21DF48680091F349 /* RxWKUIDelgateProxySpec.swift in Sources */,
-				2910A91D21DF48680091F349 /* RxWkNavigationDelegateProxyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

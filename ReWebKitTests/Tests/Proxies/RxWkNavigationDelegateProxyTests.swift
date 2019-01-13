@@ -1,45 +1,41 @@
-import Nimble
-import Quick
-import RxCocoa
-import RxSwift
-import WebKit
+import XCTest
 
 @testable import ReWebKit
 
-class RxWKNavigationDelegateProxySpec: QuickSpec {
+class RxWkNavigationDelegateProxyTests: XCTestCase {
     
-    override func spec() {
-        describe("RxWKNavigationDelegate Tesing") {
-            context("WKWebView NavigationDelegate testing") {
-                
-                let viewMock = ReWebView(frame: .zero)
-                let navigationMock = WKNavigationDelegateMock()
-                
-                it("Should be nil. if WKUIDelegate not set in mock") {
-                    let expected = RXWkNavigationDelegateProxy.currentDelegate(for: viewMock)
-                    expect(expected).to(beNil())
-                }
-                
-                it("Should not be nil. if init method called") {
-                    
-                    let actor = ReWebView(frame: .zero)
-                    let _ = RXWkNavigationDelegateProxy(parentObject: actor)
-                    expect(actor).toNot(beNil())
-                }
-                
-                it("Should not be nil. if WKUIDelegate set in mock") {
-                    
-                    let _ =  RXWkNavigationDelegateProxy.setCurrentDelegate(navigationMock, to: viewMock)
-                    let expected = RXWkNavigationDelegateProxy.currentDelegate(for: viewMock)
-                    
-                    expect(expected).toNot(beNil())
-                }
-            }
-        }
-        
-        
+    var actor: ReWebView?
+    var navigationMock: WKNavigationDelegateMock?
+    
+    override func setUp() {
+        actor = ReWebView(frame: .zero)
+        navigationMock = WKNavigationDelegateMock()
     }
+    
+    override func tearDown() {
+        actor = nil
+        navigationMock = nil
+    }
+    
+   
 }
 
-
-
+// Single method test
+extension RxWkNavigationDelegateProxyTests {
+    
+    func test_ShouldBeNilIfWKUIDelegateNotSetInMock() {
+        let expected = RXWkNavigationDelegateProxy.currentDelegate(for: actor!)
+        XCTAssertNil(expected)
+    }
+    
+    func test_ShouldBeNotNilIfInitMethodCalled() {
+        let proxy = RXWkNavigationDelegateProxy(parentObject: actor!)
+        XCTAssertNotNil(proxy)
+    }
+    
+    func test_ShouldNotBeNilIfWKUIDelegateSetInMock() {
+        let _ = RXWkNavigationDelegateProxy.setCurrentDelegate(navigationMock, to: actor!)
+        let expected = RXWkNavigationDelegateProxy.currentDelegate(for: actor!)
+        XCTAssertNotNil(expected)
+    }
+}
